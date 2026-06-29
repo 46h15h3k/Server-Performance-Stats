@@ -34,8 +34,8 @@ A shell script to analyse basic Linux server performance statistics.
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/46h15h3k/Server-Performance-Stats.git
+cd Server-Performance-Stats
 ```
 
 **2. Make the script executable**
@@ -63,17 +63,62 @@ sudo ./server-stats.sh
 ```
 ────────────────────────────────────────────────────────
        SERVER PERFORMANCE STATS REPORT
-       Generated: 2025-06-29 10:45:00 UTC
+       Generated: 2026-06-29 08:12:15 UTC
 ────────────────────────────────────────────────────────
 ▸ OS & SYSTEM INFO
-  OS Version    : Ubuntu 22.04.3 LTS
-  Kernel        : 5.15.0-91-generic
-  Hostname      : my-server
+  OS Version    : Amazon Linux 2023.12.20260622
+  Kernel        : 6.18.35-68.127.amzn2023.x86_64
+  Hostname      : ip-public.ap-south-1.compute.internal
   Architecture  : x86_64
 ────────────────────────────────────────────────────────
 ▸ UPTIME & LOAD AVERAGE
-  Uptime        : up 5 days, 3 hours, 12 minutes
-  Load Average  : 0.45, 0.38, 0.32  (1m / 5m / 15m)
+  Uptime        : up 1 hour, 20 minutes
+  Load Average  : 0.00, 0.00, 0.00  (1m / 5m / 15m)
+────────────────────────────────────────────────────────
+▸ LOGGED IN USERS
+  ec2-user     pts/0    2026-06-29 07:26
+  ec2-user     pts/1    2026-06-29 08:10
+  Total Sessions: 2
+────────────────────────────────────────────────────────
+▸ CPU USAGE
+  CPU Used      : 6.2%
+  CPU Idle      : 93.8%
+  CPU Cores     : 1
+────────────────────────────────────────────────────────
+▸ MEMORY USAGE (RAM)
+  Total         : 957 MB
+  Used          : 182 MB  (19.0%)
+  Free          : 217 MB
+  Swap          : Not configured
+────────────────────────────────────────────────────────
+▸ DISK USAGE
+  Filesystem           Size     Used     Avail    Use%
+  /dev/xvda1           8.0G     1.8G     6.2G     23%
+  /dev/xvda128         10M      1.3M     8.7M     13%
+────────────────────────────────────────────────────────
+▸ TOP 5 PROCESSES BY CPU USAGE
+  PID      USER       CPU%   MEM%   COMMAND
+  root     1          0.0    1.8    /usr/lib/systemd/systemd
+  root     2          0.0    0.0    [kthreadd]
+  root     3          0.0    0.0    [pool_workqueue_release]
+  root     4          0.0    0.0    [kworker/R-rcu_gp]
+  root     5          0.0    0.0    [kworker/R-sync_wq]
+────────────────────────────────────────────────────────
+▸ TOP 5 PROCESSES BY MEMORY USAGE
+  PID      USER       MEM%   CPU%   COMMAND
+  root     2761       3.2    0.0    /usr/bin/ssm-agent-worker
+  root     2718       2.1    0.0    /usr/bin/amazon-ssm-agent
+  root     1          1.8    0.0    /usr/lib/systemd/systemd
+  systemd+ 2058       1.5    0.0    /usr/lib/systemd/systemd-resolved
+  root     1360       1.5    0.0    /usr/lib/systemd/systemd-journald
+────────────────────────────────────────────────────────
+▸ FAILED LOGIN ATTEMPTS
+  Failed Logins : 0 (all time, from /var/log/btmp)
+  Recent Fails  :
+────────────────────────────────────────────────────────
+  ✔ Report complete.
+────────────────────────────────────────────────────────
+
 ...
 ```
 
