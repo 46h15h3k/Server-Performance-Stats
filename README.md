@@ -121,9 +121,3 @@ sudo ./server-stats.sh
 
 ...
 ```
-
----
-
-## License
-
-MIT
