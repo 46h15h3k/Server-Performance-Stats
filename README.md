@@ -2,8 +2,6 @@
 
 A shell script to analyse basic Linux server performance statistics.
 
-> 📌 Project page: [https://roadmap.sh/projects/server-stats](https://roadmap.sh/projects/server-stats)
-
 ---
 
 ## Features
